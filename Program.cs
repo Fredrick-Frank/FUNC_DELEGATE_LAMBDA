@@ -7,12 +7,12 @@ namespace Func_Delegate
     {
         public static void Main()
         {
-            Func<int> getRandomNumber = () => new Random().Next(1,100);
+            Func<int> getRandomNumber = () => new Random().Next(1,100); //getting random numbers
 
-            Func<int, int, int> Sum = (x,y) => x + y;
+            Func<int, int, int> Sum = (x,y) => x + y; //utilizing the FUNC delegate to print out the output
 
-            Console.WriteLine(getRandomNumber());
-            Console.WriteLine(Sum(100,50));
+            Console.WriteLine(getRandomNumber()); //print out the random number
+            Console.WriteLine(Sum(100,50)); //addition of the variable x & y
         }
     }
 }
